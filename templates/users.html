@@ -1,0 +1,69 @@
+
+<body class="body">
+
+  <title>Student Details</title>
+
+  <h1 class = "head"><u>Student Details </h1>
+
+<table border = 6 class = 'table'>
+
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Mobile no</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+        <th>Address Line 1 </th>
+        <th>Address Line 1 </th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zipcode</th>
+        <th>Country</th>
+  
+      </tr>
+    </thead>
+  
+      {% for user in userDetails %}
+      <tr>
+        <td> {{user[0]}} </td>
+        <td> {{user[1]}} </td>
+        <td> {{user[2]}} </td>
+        <td> {{user[3]}} </td>
+        <td> {{user[4]}} </td>
+        <td> {{user[5]}} </td>
+        <td> {{user[6]}} </td>
+        <td> {{user[7]}} </td>
+        <td> {{user[8]}} </td>
+        <td> {{user[9]}} </td>
+        <td> {{user[10]}} </td>
+        <td> {{user[11]}} </td>
+        <td> {{user[12]}} </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+
+    <style>
+
+  .head{
+      text-align: center;
+      font-size: 50px;
+      color: #000000;
+      font-family: 'Cambria', sans-serif';
+  }
+
+    .body{
+      margin-top: 50px;
+    }
+
+    .table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+
+    </style>

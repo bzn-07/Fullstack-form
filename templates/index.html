@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+  </head>
+  <body class = 'body'>
+    <h1 class = "title"><u>Student Registration Form</h1>
+    <form action="" method="post" class="form">
+      <label for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="firstname" class='formbox' required>
+      <br><br>
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" name="lastname" id="lastname" class='formbox' required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" class='formbox' required>
+      <br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" class='formbox' required>
+      <br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" class='formbox' required>
+      <br><br>
+
+      <label for="gender">Gender:</label>
+      <select name="gender" class='formbox' id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+      <label for="address1">Address line1:</label>
+      <textarea name="address1" id="address1" class='formbox' required></textarea>
+      <br><br>
+
+      <label for="address2">Address line 2:</label>
+      <textarea name="address2" id="address2" class='formbox' required></textarea>
+      <br><br>
+
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" class='formbox' required>
+      <br><br>
+
+      <label for="state">State:</label>
+      <input type="text" name="state" id="state" class='formbox' required>
+      <br><br>
+
+      <label for="zipcode">Zip Code:</label>
+      <input type="text" name="zipcode" id="zipcode" class='formbox' required>
+      <br><br>
+
+      <label for="country">Country:</label>
+      <input type="text" name="country" id="country" class='formbox' required>
+      <br><br>
+
+      <input type="submit" value="Submit" class = "submit">
+    </form>
+  </body>
+</html>
+
+
+<style>
+
+.body{
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.formbox{
+
+    width:65%;
+
+}
+
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.form{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #555252;
+    font-family: Times New Roman, Helvetica, 'Arial', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 1px;
+}
+
+.submit{
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 300px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    text-align: center;
+    transform: translate(15%, 0);
+
+}
+
+.submit:hover{
+    background-color: #4cbef7;
+    color: #000000;
+}
+
+</style>
+      
